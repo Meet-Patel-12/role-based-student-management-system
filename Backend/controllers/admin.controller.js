@@ -43,7 +43,7 @@ exports.approveUser = async (req, res, next) => {
     }
 }
 
-// Reject user
+// Reject user and set status to rejected
 exports.rejectUser = async (req, res, next) => {
     try {
         const user = await User.findById(req.params.id);
