@@ -2,7 +2,7 @@ const User = require("../models/user.model");
 const AppError = require("../utils/AppError");
 const Student = require("../models/student.model")
 
-// Get all pending users
+// Get all pending users and return them to the client (without password field)
 exports.getPendingUsers = async (req, res, next) => {
     try {
         const users = await User.find({ status: "pending" }).select("-password");
