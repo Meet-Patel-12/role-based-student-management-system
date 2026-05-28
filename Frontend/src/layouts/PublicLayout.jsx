@@ -1,0 +1,14 @@
+import { Outlet } from "react-router-dom";
+
+const PublicLayout = () => {
+  return (
+    <div className="min-h-screen bg-gray-50 flex flex-col">
+      {/* Public pages content */}
+      <main className="flex-1 flex items-center justify-center p-4">
+        <Outlet />
+      </main>
+    </div>
+  );
+};
+
+export default PublicLayout;

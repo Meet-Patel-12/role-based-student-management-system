@@ -13,7 +13,7 @@ exports.getPendingUsers = async (req, res, next) => {
     }
 }
 
-// Approve user
+// Approve user and create student profile if role is student
 exports.approveUser = async (req, res, next) => {
     try {
         const user = await User.findById(req.params.id);

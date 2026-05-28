@@ -1,37 +1,42 @@
-# ========================
-# Node.js
-# ========================
-node_modules/
+# ===================== LOGS =====================
+logs
+*.log
 npm-debug.log*
 yarn-debug.log*
 yarn-error.log*
+pnpm-debug.log*
+lerna-debug.log*
 
-# ========================
-# Environment variables
-# ========================
+# ===================== ENV FILES =====================
 .env
-.env.local
-.env.development
-.env.production
+.env.*
+!.env.example
 
-# ========================
-# Logs
-# ========================
-logs/
-*.log
+# ===================== DEPENDENCIES =====================
+node_modules/
 
-# ========================
-# OS files
-# ========================
+# ===================== BUILDS =====================
+# Frontend
+Frontend/dist
+Frontend/dist-ssr
+
+# Backend
+Backend/dist
+Backend/build
+
+# ===================== LOCAL CONFIG =====================
+*.local
+
+# ===================== EDITORS =====================
+.vscode/*
+!.vscode/extensions.json
+.idea
 .DS_Store
+*.suo
+*.ntvs*
+*.njsproj
+*.sln
+*.sw?
+
+# ===================== OS =====================
 Thumbs.db
-
-# ========================
-# VS Code
-# ========================
-.vscode/
-
-# ========================
-# Coverage
-# ========================
-coverage/
